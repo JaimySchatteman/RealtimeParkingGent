@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parkeergarages Gent</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/solid.css" type="text/css"
+          media="screen"/>
+    <link rel="stylesheet" href="node_modules/@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row vh-100">
+        <div class="col-3 sidebar h-100 p-3 overflow-auto">
+
+            <!-- Sidebar Header -->
+            <div id="header" class="justify-content-start row mb-4">
+                <img src="assets/images/logo-Stad-Gent.png" alt="LogoStadGent" class=" ml-3 col-7">
+            </div>
+
+            <!--  Searchbar    -->
+            <div id="geocoder" class="geocoder d-flex justify-content-center p-0">
+
+            </div>
+
+            <hr class="mb-0">
+
+            <div class="sidebar-content d-flex flex-column justify-content-center">
+
+                <!-- Loading animation -->
+                <div class="col-3 m-auto">
+                    <div class="loadingio-spinner-rolling-idxmpf31wfg">
+                        <div class="ldio-h9u0z38v2z">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <!--  End Loading animation -->
+
+                <!-- Sidebar element -->
+
+                <!-- Sidebar element -->
+            </div>
+
+            <div id="recent-searches-wrapper" class="d-none">
+                <hr class="">
+                <div id="recent-searches" class="d-flex flex-column sidebar-element bg-light p-3 pl-4">
+                </div>
+            </div>
+        </div>
+        <div id='map' class="col">
+
+        </div>
+    </div>
+</div>
+
+<script src="scripts/bundle.js"></script>
+</body>
+</html>
